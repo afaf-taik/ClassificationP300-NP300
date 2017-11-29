@@ -55,8 +55,8 @@ for i=1:MaxIterations
     endfor
     
     for a=1:K
-      np300means(K,1)=newnp300means(K,1)/nbrnp300(K);
-      np300means(K,2)=newnp300means(K,2)/nbrnp300(K);
+      np300means(a,1)=newnp300means(a,1)/nbrnp300(a);
+      np300means(a,2)=newnp300means(a,2)/nbrnp300(a);
     endfor        
 endfor
 %-------------------------------------------------------------
@@ -68,7 +68,7 @@ load testnp300.mat;
 %Modifier le K pour tester les différentes valeurs
 K=5;
 T=0;
-N=K;
+N=6;
 
 DistP300=zeros(1,N);
 DistNP300=zeros(1,N);
